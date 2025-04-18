@@ -9,8 +9,8 @@ export default function Chats({ data }) {
   const { id } = useParams();
   const [search, setSearch] = useState("");
   return (
-    <div className="flex min-h-screen  text-white  border-background-base border-x-2">
-      <div className="w-1/4">
+    <div className="flex min-h-screen text-white border-background-base border-x-2">
+      <div className="w-[25vw]">
         <div className="p-4 flex justify-between items-center">
           <h1 className="font-bold">Chats</h1>
           <div className="flex gap-7 items-center">

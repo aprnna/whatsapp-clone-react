@@ -4,7 +4,7 @@ import { showFormattedTime } from "../utils/timeStamp";
 export default function Bubble({ message, time, isSender }) {
   return (
     <p
-      className={`block p-2 rounded-lg w-fit text-primary ${
+      className={`block p-2 rounded-lg w-fit text-wrap max-w-md text-primary ${
         isSender
           ? "bg-brand-primary rounded-tr-none"
           : "bg-background-panel rounded-tl-none"

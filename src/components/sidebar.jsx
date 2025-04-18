@@ -7,21 +7,46 @@ import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <div className="bg-background-panel flex items-center gap-7 p-4 py-4 flex-col text-white">
-      <NavLink to="/">
+    <div className="bg-background-panel flex items-center gap-2 p-4 py-4 flex-col text-white">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? "bg-brand-accent/50 p-2 rounded-full" : "p-2 "
+        }
+      >
         <MdChat size={20} />
       </NavLink>
-      <NavLink to="/status">
+      <NavLink
+        to="/status"
+        className={({ isActive }) =>
+          isActive ? "bg-brand-accent/50 p-2 rounded-full" : "p-2 "
+        }
+      >
         <FaCircleNotch size={20} />
       </NavLink>
-      <NavLink to="/channel">
+      <NavLink
+        to="/channel"
+        className={({ isActive }) =>
+          isActive ? "bg-brand-accent/50 p-2 rounded-full" : "p-2 "
+        }
+      >
         <RiChatVoiceLine size={20} />
       </NavLink>
-      <NavLink to="/community">
+      <NavLink
+        to="/community"
+        className={({ isActive }) =>
+          isActive ? "bg-brand-accent/50 p-2 rounded-full" : "p-2 "
+        }
+      >
         <FaUserGroup size={20} />
       </NavLink>
       <div className="flex items-center gap-4 mt-auto flex-col">
-        <NavLink to="/setting">
+        <NavLink
+          to="/setting"
+          className={({ isActive }) =>
+            isActive ? "bg-brand-accent/50 p-2 rounded-full" : "p-2 "
+          }
+        >
           <IoSettingsOutline size={20} />
         </NavLink>
         <NavLink to="/profile">
